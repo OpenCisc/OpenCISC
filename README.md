@@ -37,7 +37,7 @@ By combining the scalability of multicore RISC processors, the flexibility of FP
 ## Project Directory Structure
 The following is an example of how the project files could be organized :
 ```markdown
-```sh
+
 project/
 ├── include/
 │   ├── microcode.h               # Global microcode definitions
@@ -64,6 +64,6 @@ project/
 │   ├── opcode_add.v              # Gate-level netlist for ADD
 │   ├── opcode_sub.v              # Gate-level netlist for SUB
 ├── Makefile                      # Build system
-
+```
 ## Conclusion
 The OpenCISC processor’s distributed pipeline architecture, combined with JIT compiler integration and FPGA acceleration, represents a significant step forward in bridging the gap between RISC and CISC designs. By translating and optimizing CISC instructions dynamically, while leveraging modular FPGA fabrics and scalable RISC cores, this architecture provides a robust and flexible solution for high-performance, backward-compatible computing.
