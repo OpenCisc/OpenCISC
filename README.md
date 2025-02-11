@@ -20,7 +20,9 @@ Converts complex, variable-length CISC instructions into optimized RISC µOps at
 
 ## Hot Code Optimization
 Identifies frequently executed instructions (hot paths) and applies runtime optimizations, such as inlining, loop unrolling, and instruction fusion.
-Hardware-Assisted Acceleration**: Offloads parts of the translation process to the FPGA fabric attached to each RISC core, reducing translation latency and enabling higher throughput.
+
+## Hardware-Assisted Acceleration: 
+Offloads parts of the translation process to the FPGA fabric attached to each RISC core, reducing translation latency and enabling higher throughput.
 
 ## Workload Adaptation
 Dynamically adjusts to changing workloads by reconfiguring the JIT pipeline to prioritize performance-critical tasks.
