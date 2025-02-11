@@ -27,9 +27,10 @@ Dynamically adjusts to changing workloads by reconfiguring the JIT pipeline to p
 Benefits of the Design
 By combining the scalability of multicore RISC processors, the flexibility of FPGA hardware, and the efficiency of a JIT compiler, the OpenCISC processor offers:
 
-**High Performance**: Distributed pipeline stages, FPGA acceleration, and JIT optimizations reduce latency and boost throughput.
-**Flexibility**: FPGA fabrics and the JIT stage allow for runtime adaptation to new instructions and specific workloads.
-**Scalability**: Adding more RISC cores with FPGA accelerators and integrating advanced JIT strategies enables handling of larger and more complex workloads.
-**Backward Compatibility**: Legacy CISC instructions are efficiently translated into RISC operations, maintaining compatibility with older software ecosystems.
-Project Directory Structure
+- High Performance: Distributed pipeline stages, FPGA acceleration, and JIT optimizations reduce latency and boost throughput.
+- Flexibility: FPGA fabrics and the JIT stage allow for runtime adaptation to new instructions and specific workloads.
+- Scalability: Adding more RISC cores with FPGA accelerators and integrating advanced JIT strategies enables handling of larger and more complex workloads.
+- Backward Compatibility: Legacy CISC instructions are efficiently translated into RISC operations, maintaining compatibility with older software ecosystems.
+
+## Project Directory Structure
 The following is an example of how the project files could be organized
