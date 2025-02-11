@@ -36,7 +36,8 @@ By combining the scalability of multicore RISC processors, the flexibility of FP
 
 ## Project Directory Structure
 The following is an example of how the project files could be organized :
-
+```markdown
+```sh
 project/
 ├── include/
 │   ├── microcode.h               # Global microcode definitions
