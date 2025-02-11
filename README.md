@@ -36,7 +36,7 @@ By combining the scalability of multicore RISC processors, the flexibility of FP
 ## Diagram
 
 
-<svg width="1200" height="900" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="900">
           <!-- Background -->
           <rect width="1200" height="900" fill="#f9f9f9" />
 
@@ -146,7 +146,7 @@ By combining the scalability of multicore RISC processors, the flexibility of FP
           <text x="50%" y="850" text-anchor="middle" font-size="12" font-family="Arial" fill="#7f8c8d">
             OpenCISC Processor - Distributed CISC Pipeline over RISC Cores and FPGAs
           </text>
-        </svg>
+</svg>
 
 ## Project Directory Structure
 The following is an example of how the project files could be organized :
