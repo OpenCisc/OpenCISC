@@ -34,7 +34,7 @@ By combining the scalability of multicore RISC processors, the flexibility of FP
 - Scalability: Adding more RISC cores with FPGA accelerators and integrating advanced JIT strategies enables handling of larger and more complex workloads.
 - Backward Compatibility: Legacy CISC instructions are efficiently translated into RISC operations, maintaining compatibility with older software ecosystems.
 ## Diagram
-```xml
+
 
 <svg width="1200" height="900" xmlns="http://www.w3.org/2000/svg">
           <!-- Background -->
@@ -147,7 +147,7 @@ By combining the scalability of multicore RISC processors, the flexibility of FP
             OpenCISC Processor - Distributed CISC Pipeline over RISC Cores and FPGAs
           </text>
         </svg>
-```
+
 ## Project Directory Structure
 The following is an example of how the project files could be organized :
 ```markdown
