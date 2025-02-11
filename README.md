@@ -65,5 +65,26 @@ project/
 │   ├── opcode_sub.v              # Gate-level netlist for SUB
 ├── Makefile                      # Build system
 ```
+
+## CI/CD (Continuous Integration & Continuous Deployment) pipeline
+### Stage 1: Build Linux Kernel & Package Manager
+Compiles the Linux kernel.
+
+Creates Live ISO with SquashFS & package manager.
+
+### Stage 2: Boot in QEMU & Test
+Runs the system in QEMU before deploying to FPGA.
+
+### Stage 3: Deploy to FPGA
+Uploads Live ISO to the FPGA board.
+
+### Stage 4: Run OpenLane for ASIC
+Synthesize Verilog for a custom Pentium core.
+Generate a GDSII layout (ready for fabrication).
+
+### Stage 5: Simulate the ASIC
+Verifies RTL correctness before sending to fabrication.
+
+
 ## Conclusion
 The OpenCISC processor’s distributed pipeline architecture, combined with JIT compiler integration and FPGA acceleration, represents a significant step forward in bridging the gap between RISC and CISC designs. By translating and optimizing CISC instructions dynamically, while leveraging modular FPGA fabrics and scalable RISC cores, this architecture provides a robust and flexible solution for high-performance, backward-compatible computing.
