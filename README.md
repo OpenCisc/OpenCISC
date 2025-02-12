@@ -1,7 +1,8 @@
-## Overview
+# Overview
 
 The OpenCISC processor architecture is a new design that combines the strengths of CISC (Complex Instruction Set Computing) and RISC (Reduced Instruction Set Computing) architectures. Its key innovation lies in the implementation of a distributed pipeline, where different stages of instruction processing are assigned across multiple RISC cores. Each RISC core is equipped with its own FPGA fabric, allowing for hardware acceleration of stage-specific functions and enabling successive improvements in design across OpenCISC processor generations.
-Key Features of the Distributed Pipeline
+
+# Key Features of the Distributed Pipeline
 
 ## Distributed Stages
 The pipeline stages, such as instruction fetch, decode, execute, and write-back, are distributed across multiple RISC cores. This increases parallelism and scalability.
@@ -33,12 +34,12 @@ By combining the scalability of multicore RISC processors, the flexibility of FP
 - Flexibility: FPGA fabrics and the JIT stage allow for runtime adaptation to new instructions and specific workloads.
 - Scalability: Adding more RISC cores with FPGA accelerators and integrating advanced JIT strategies enables handling of larger and more complex workloads.
 - Backward Compatibility: Legacy CISC instructions are efficiently translated into RISC operations, maintaining compatibility with older software ecosystems.
-## Diagram
+# Diagram
 
 
 <img src="image.svg" alt="SVG Image" width="1200">
 
-## Project Directory Structure
+# Project Directory Structure
 The following is an example of how the project files could be organized :
 ```markdown
 
@@ -70,24 +71,24 @@ project/
 ├── Makefile                      # Build system
 ```
 
-## CI/CD (Continuous Integration & Continuous Deployment) pipeline
+# CI/CD (Continuous Integration & Continuous Deployment) pipeline
 
-### Stage 1: Build Linux Kernel & Package Manager
+## Stage 1: Build Linux Kernel & Package Manager
 Compiles the Linux kernel.
 Creates Live ISO with SquashFS & package manager.
 
-### Stage 2: Boot in QEMU & Test
+## Stage 2: Boot in QEMU & Test
 Runs the system in QEMU before deploying to FPGA.
 
-### Stage 3: Deploy to FPGA
+## Stage 3: Deploy to FPGA
 Uploads Live ISO to the FPGA board.
 
-### Stage 4: Run OpenLane for ASIC
+## Stage 4: Run OpenLane for ASIC
 Synthesize Verilog for a custom Pentium core.
 Generate a GDSII layout (ready for fabrication).
 
-### Stage 5: Simulate the ASIC
+## Stage 5: Simulate the ASIC
 Verifies RTL correctness before sending to fabrication.
 
-## Conclusion
+# Conclusion
 The OpenCISC processor’s distributed pipeline architecture, combined with JIT compiler integration and FPGA acceleration, represents a significant step forward in bridging the gap between RISC and CISC designs. By translating and optimizing CISC instructions dynamically, while leveraging modular FPGA fabrics and scalable RISC cores, this architecture provides a robust and flexible solution for high-performance, backward-compatible computing.
